@@ -1,0 +1,41 @@
+1. fetch API
+    - ajax를 구현하는 기술
+    - fetch ('') : 해당 파일과 통신
+    - then('') : 응답이 끝나면 해당 함수를 실행(비동기)
+               : 해당 함수의 첫 번째 인자로 response 객체를 받아온다.
+
+    ex) 
+        function callbackMe() {
+            console.log("callback");
+        }
+
+        fetch('html').then(callbackMe);
+        console.log(1);
+        console.log(2);
+
+        => 1
+        => 2
+        => callback
+
+    ex) fetch('html')then(function(response){
+            if (response.status == '400') {
+                alert("file not found);
+            }
+        });
+
+
+    ex) 
+        fetch('http://example.com/movies.json')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.log(JSON.stringify(myJson));
+        });
+        
+2. fragment identifier
+    - hash : #
+    - location.hash
+
+    ex) hash bang (#!)
+        <a href="#!www.naver.com">NAVER</a>
