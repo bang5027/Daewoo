@@ -15,4 +15,4 @@ _ _ _
 ### Try it out
 
 _ _ _
-https://bang5027.github.io/Momonton/@[]()
+https://bang5027.github.io/Momonton
